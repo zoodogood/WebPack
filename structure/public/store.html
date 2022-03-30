@@ -15,17 +15,6 @@
   </head>
   <body>
     <form id = "form__base" name = "sendwebhook">
-      <span id = "level-confirm">
-        <label for = "level-confirm">Выберите уровень:</label>
-        <select required class = "form_select" name = "level-confirm">
-          <option value = "1">Первый</option>
-          <option value = "2">Второй</option>
-          <option value = "3">Третий</option>
-          <option value = "4">Четвертый</option>
-          <option value = "5">Премиум</option>
-        </select>
-      </span>
-
       <span id = "user-tag">
         <label for = "user-tag">Ваше имя в Discord</label>
         <input pattern = ".+?#\d{4}" required type = "text" class = "form_input" name = "user-tag" placeholder = "Bampus#0000">
@@ -37,15 +26,6 @@
         <hr>
       </span>
 
-      <span id = "bots-count">
-        <label for = "bots-count">Сколько ботов хотите видеть?</label>
-        <select required class = "form_select" name = "bots-count">
-          <option value = "1">Не хочу</option>
-          <option value = "2">Меньше</option>
-          <option value = "3">Около 5-ти</option>
-          <option value = "4">Больше</option>
-        </select>
-      </span>
 
       <span id = "other">
         <label for = "other">Другое:</label>
@@ -67,7 +47,6 @@
 
 
       <span id = "submit">
-        <!-- <hr> -->
         <input type = "submit" class = "form_button" value="Отправить"></textarea>
       </span>
     </form>
