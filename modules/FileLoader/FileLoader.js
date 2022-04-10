@@ -22,7 +22,10 @@ class FileLoader {
   }
 
 
-  loadAsync(path, { parent, type = "js", createElement = null, ...other }){
+  loadAsync(path, { parent, type = "js", createElement = null, ...other } = {}){
+    if (!parent)
+      throw new Error("The parent node for your element must be indicated");
+      
     const fullPath = this.base + path;
 
     const node = createElement ?
