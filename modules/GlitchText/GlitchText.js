@@ -19,7 +19,7 @@ class GlitchText {
         word.pop();
 
       if (word.length < target.length)
-        word.push( String.fromCharCode(~~(Math.random() * 500000)) );
+        word.push( String.fromCharCode(~~(Math.random() * 50)) );
 
       yield word.join("");
     }
