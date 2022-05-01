@@ -1,3 +1,4 @@
+```js
 await new FileLoader("resources/modules")
   .loadAsync("/index/style.css", { type: "css", parent: "head" })
   .loadSync("/util.js", {})
@@ -7,3 +8,4 @@ await new FileLoader("resources/modules")
   .loadSync("/Header/Header.js", {})
   .loadSync("/ScrollUp/ScrollUp.js", {})
   .whenQueueEnd;
+```
